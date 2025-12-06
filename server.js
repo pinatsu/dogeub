@@ -16,13 +16,14 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const port = process.env.PORT || 2345;
+const host = "0.0.0.0";
 const server = createServer();
 const bare = process.env.BARE !== "false" ? createBareServer("/seal/") : null;
 logging.set_level(logging.NONE);
 
 Object.assign(wisp.options, {
   dns_method: "resolve",
-  dns_servers: ["1.1.1.3", "1.0.0.3"],
+  dns_servers: ["1.1.1.1", "1.0.0.1"],
   dns_result_order: "ipv4first"
 });
 
@@ -121,4 +122,4 @@ app.setNotFoundHandler((req, reply) =>
     : reply.code(404).send({ error: "Not Found" })
 );
 
-app.listen({ port }).then(() => console.log(`Server running on ${port}`));
+app.listen({ port , host }).then(() => console.log(`Server running on ${port}`));

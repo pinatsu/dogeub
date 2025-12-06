@@ -99,7 +99,7 @@ const devTools = (): void => {
     (iframe.contentWindow as any).eruda.destroy();
   } else {
     const s = iframe.contentDocument.createElement('script');
-    s.src = 'https://cdn.jsdelivr.net/npm/eruda';
+    s.src = 'https://cdn.jsdmirror.com/npm/eruda';
     s.onload = () => {
       const cw = iframe.contentWindow as any;
       cw.eruda.init();
