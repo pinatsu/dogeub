@@ -93,7 +93,7 @@ class TabManager {
       filter: CONFIG.filter,
       options: stored,
       prType: stored.prType || 'auto',
-      search: stored.engine || 'https://www.google.com/search?q=',
+      search: stored.engine || 'https://duckduckgo.com/?q=',
       newTabUrl: '/new',
       newTabTitle: 'New Tab',
       enc: arr[0],

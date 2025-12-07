@@ -348,6 +348,14 @@ export const meta = [
 ];
 
 export const searchConfig = [
+  {                                      
+    option: 'DuckDuckGo',          
+    value: {                                  
+      engineName: 'DuckDuckGo', 
+      engine: 'https://duckduckgo.com/?q=',
+      engineIcon: 'https://duckduckgo.com/favicon.ico',
+    },              
+  },
   {
     option: 'Google',
     value: {
@@ -355,14 +363,6 @@ export const searchConfig = [
       engine: 'https://www.google.com/search?q=',
       engineIcon:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Google_Favicon_2025.svg/120px-Google_Favicon_2025.svg.png',
-    },
-  },
-  {
-    option: 'DuckDuckGo',
-    value: {
-      engineName: 'DuckDuckGo',
-      engine: 'https://duckduckgo.com/?q=',
-      engineIcon: 'https://duckduckgo.com/favicon.ico',
     },
   },
   {

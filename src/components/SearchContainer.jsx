@@ -86,14 +86,14 @@ const SearchContainer = memo(function SearchContainer({ logo = true, cls, nav = 
   }, []);
 
   const placeholder = useMemo(
-    () => `Search ${options.engineName || 'Google'} or type URL`,
+    () => `Search ${options.engineName || 'DuckDuckGo'} or type URL`,
     [options.engineName],
   );
 
   const iconSrc = useMemo(
     () =>
       options.engineIcon ??
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Google_Favicon_2025.svg/120px-Google_Favicon_2025.svg.png',
+      'https://upload.wikimedia.org/wikipedia/en/thumb/9/90/The_DuckDuckGo_Duck.png/250px-The_DuckDuckGo_Duck.png',
     [options.engineIcon],
   );
 
