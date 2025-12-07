@@ -92,7 +92,7 @@ class TabManager {
       unsupported: CONFIG.unsupported,
       filter: CONFIG.filter,
       options: stored,
-      prType: stored.prType || 'auto',
+      prType: stored.prType || 'scr',
       search: stored.engine || 'https://duckduckgo.com/?q=',
       newTabUrl: '/new',
       newTabTitle: 'New Tab',
