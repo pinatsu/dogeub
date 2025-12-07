@@ -353,7 +353,7 @@ export const searchConfig = [
     value: {                                  
       engineName: 'DuckDuckGo', 
       engine: 'https://duckduckgo.com/?q=',
-      engineIcon: 'https://duckduckgo.com/favicon.ico',
+      engineIcon: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/90/The_DuckDuckGo_Duck.png/250px-The_DuckDuckGo_Duck.png',
     },              
   },
   {
